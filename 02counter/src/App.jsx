@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(15)
 
   // let counter = 15
 
@@ -14,8 +14,11 @@ function App() {
     //   counter = counter + 1
     //   setCounter(counter)
     // }
-    counter = counter + 1
-    setCounter(counter)
+    // counter = counter + 1
+    setCounter( prevCounter => prevCounter + 1)
+    setCounter( prevCounter => prevCounter + 1)
+    setCounter( prevCounter => prevCounter + 1)
+    setCounter( prevCounter => prevCounter + 1)
   }
 
   const removevalue = () => {
@@ -23,8 +26,8 @@ function App() {
     //   counter = counter - 1
     //   setCounter(counter)
     //  }
-    counter = counter - 1
-    setCounter(counter)
+    // counter = counter - 1
+    setCounter(counter - 1)
   }
 
   return (
